@@ -1,15 +1,12 @@
 package kz.example.courier.dto;
 
-
-import lombok.AllArgsConstructor;
-import lombok.Getter;
+import lombok.Data; // Проверьте этот импорт
 import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.AllArgsConstructor;
 
+@Data // Генерирует геттеры, сеттеры, toString, equals и hashCode
 @NoArgsConstructor
 @AllArgsConstructor
-@Getter
-@Setter
 public class RegisterCourierDto {
     private String phone;
     private String password;
